@@ -1,0 +1,19 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "LIRI is a Language Interpretation and Recognition Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamGiel/liri-node-app.git"
+  },
+  "author": "Gel D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IamGiel/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/IamGiel/liri-node-app#readme"
+}
