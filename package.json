@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/IamGiel/liri-node-app/issues"
   },
-  "homepage": "https://github.com/IamGiel/liri-node-app#readme"
+  "homepage": "https://github.com/IamGiel/liri-node-app#readme",
+  "dependencies": {
+    "request": "^2.83.0",
+    "require": "^2.4.20",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {}
 }
