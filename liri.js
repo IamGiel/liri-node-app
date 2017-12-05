@@ -3,7 +3,7 @@
 	var request = require("request");
 	var keys = require("./keys.js");
 	var twitter = require("twitter");
-	var spotify = require ("spotify");
+	var Spotify = require('node-spotify-api');
 	var liriArgument = process.argv[2];
 	
 
@@ -76,10 +76,9 @@
 		}
 		client.get('statuses/user_timeline', params, function(error, tweets, response) {
 		  if (!error) {
-		  	console.log(" ===================== LIRI PROVIDED THIS DATA FOR YOU...====================\n")
-
+		  	console.log(" ===================== LIRI GOT YOU " + twitterUsername.toUpperCase() +  "'S LATEST TWEETS...====================\n\n\n");
 		  	for (var i = 1; i < tweets.length; i++) {
-		  		console.log("~~~~~~~~~~~~~~~~~~~~~ TWEET:"+  i  + " ~~~~~~~~~~~~~~~~~~~~~\n");
+		  		console.log("~~~~~~~~~~~~~~~~~~~~~ TWEET # "+  i  + " ~~~~~~~~~~~~~~~~~~~~~\n");
 		  		console.log(tweets[i].text);
 		  		var time = tweets[i].created_at;
 		  		var timeArr = time.split(' ');
@@ -91,8 +90,25 @@
 		});	
 	}
 
-	//=================================================================
-	// // Spotify function, uses the Spotify module to call the Spotify api
+	// =================================================================
+	// Spotify function, uses the Spotify module to call the Spotify api
+	function spotifyThisSong() {
+			var spotify = new Spotify({
+				id: '27a8864ac89a46a0b05ff38922f61f58',
+				secret: '6396ce8169954f6c9edf68c72af394ab'
+			});
+			var songName = process.argv[3];
+			var params = songName;
+			spotify.search({ type: 'track', query: params, count: 5 }, function(error, data) {
+					if (!error) {
+						for (var i = 0; i < 5; i++) {
+							console.log(data);
+					}
+				}
+					return console.log('Error occurred: ' + error);
+			});
+	}
+
 	// function spotifyThisSong(songName) {
 	// 	var songName = process.argv[3];
 	// 	if(!songName){
