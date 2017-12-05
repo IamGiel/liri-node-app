@@ -99,13 +99,24 @@
 			});
 			var songName = process.argv[3];
 			var params = songName;
-			spotify.search({ type: 'track', query: params, count: 5 }, function(error, data) {
-					if (!error) {
+			spotify.search({ type: 'track', query: params }, function(err, data) {
+				if (!err) {
+					var songInfo = data.tracks.items;
+						console.log(songInfo);
 						for (var i = 0; i < 5; i++) {
-							console.log(data);
+							if (songInfo[i] != undefined) {
+								var spotifyResults =
+								"Artist: " + songInfo[i].artists[0].name + "\n" +
+								"Song: " + songInfo[i].name + "\n" +
+								"Album the song is from: " + songInfo[i].album.name + "\n" +
+								"Preview Url: " + songInfo[i].preview_url + "\n" + 
+								"------------------------------ " + i + " ------------------------------" + "\r\n";
+								console.log(spotifyResults);
+								// log(spotifyResults); // calling log function
+							}
+						}
 					}
-				}
-					return console.log('Error occurred: ' + error);
+				return console.log('Error occurred: ' + err);
 			});
 	}
 
