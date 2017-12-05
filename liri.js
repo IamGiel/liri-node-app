@@ -20,7 +20,7 @@
 			"\n OPTION: 2. spotify-this-song 'any song name' "+
 			"\n OPTION: 3. movie-this 'any movie name' "+
 			"\n OPTION: 4. do-what-it-says."+
-			"\nBe sure to put the movie or song name in quotation marks if it's more than one word.");
+			"\n**********Be sure to put the movie or song name in quotation marks if it's more than one word.**********");
 	};
 
 	//=================================================================
@@ -76,22 +76,17 @@
 		}
 		client.get('statuses/user_timeline', params, function(error, tweets, response) {
 		  if (!error) {
-		  	for (var i = 0; i < tweets.length; i++) {
-		  		console.log(response.text);
-		  		console.log(tweets.text);
-		  		console.log(JSON.stringify(response.text, null, 2));
+		  	console.log(" ===================== LIRI PROVIDED THIS DATA FOR YOU...====================\n")
 
-		  		// console.log(response.text);
-		  		console.log("------------------------"+  i  +"---------------------------");
+		  	for (var i = 1; i < tweets.length; i++) {
+		  		console.log("~~~~~~~~~~~~~~~~~~~~~ TWEET:"+  i  + " ~~~~~~~~~~~~~~~~~~~~~\n");
+		  		console.log(tweets[i].text);
+		  		var time = tweets[i].created_at;
+		  		var timeArr = time.split(' ');
+		  		console.log(timeArr.slice(0,4).join('- '));
+		  		console.log("\n\n\n");		  		
 		  	}
-		  	for (var i = 0; i < tweets.length; i++) {
-		  		console.log(response.text);
-		  		console.log(tweets.text);
-		  		console.log(JSON.stringify(response.text, null, 2));
-
-		  		// console.log(response.text);
-		  		console.log("------------------------"+  i  +"---------------------------");
-		  	}
+		  		console.log(error);
 		  }
 		});	
 	}
