@@ -15,12 +15,12 @@
 		case "movie-this": movieThis(); break;
 		case "do-what-it-says": doWhatItSays(); break;
 		// Instructions displayed in terminal to the user
-		default: console.log("=========== MY NAME IS LIRI, CHOOSE ONE OF OPTION COMMANDS BELOW: ==============" + 
+		default: console.log("=========== MY NAME IS LIRI, CHOOSE ONE OF OPTION COMMANDS BELOW: ==============\n" + 
 			"\n OPTION: 1. my-tweets 'any twitter name' " +
 			"\n OPTION: 2. spotify-this-song 'any song name' "+
 			"\n OPTION: 3. movie-this 'any movie name' "+
-			"\n OPTION: 4. do-what-it-says."+
-			"\n**********Be sure to put the movie or song name in quotation marks if it's more than one word.**********");
+			"\n OPTION: 4. do-what-it-says."+ "\n\n" +
+			"\n**********\nBe sure to put the movie or song name in quotation \nmarks if it's more than one word.\n**********\n\n\n");
 	};
 
 	//=================================================================
@@ -49,6 +49,10 @@
 				"\n====== LIRI ====== LIRI ====== LIRI ====== LIRI====== LIRI ====== LIRI ======" + "\n" + "\n";
 				
 				console.log(movieResults);
+				fs.appendFile("log.txt", movieResults, function (error) {
+				  if (error) throw error;
+				  console.log("saved!");
+				});
 				// console.log(movieObject);
 			} else {
 				console.log("Error :"+ error);
@@ -75,17 +79,34 @@
 		}
 		client.get('statuses/user_timeline', params, function(error, tweets, response) {
 		  if (!error) {
-		  	console.log(" ===================== LIRI GOT YOU " + twitterUsername.toUpperCase() +  "'S LATEST TWEETS...====================\n\n\n");
+		  	// var dateToday = new Date();
+		  	// var dateT = dateToday.toString();
+		  	// var date = dateT.split(' ');
+		  	// console.log(date.slice(0,4).toString());
+		  	
+		  	var divider = " ===================== LIRI GOT YOU " + twitterUsername.toUpperCase() +  "'S LATEST TWEETS...====================\n\n";
+		  	console.log(divider);
 		  	for (var i = 1; i < tweets.length; i++) {
-		  		console.log("~~~~~~~~~~~~~~~~~~~~~ TWEET # "+  i  + " ~~~~~~~~~~~~~~~~~~~~~\n");
-		  		console.log(tweets[i].text);
 		  		var time = tweets[i].created_at;
 		  		var timeArr = time.split(' ');
-		  		console.log(timeArr.slice(0,4).join('- '));
-		  		console.log("\n\n\n");		  		
+		  		var output = "~~~~~~~~~~~~~~~~~~~~~ Tweet # "+  i  + " ~~~~~~~~~~~~~~~~~~~~~\n" + 
+		  		tweets[i].text + "\n" +
+		  		timeArr.slice(0,4).join('- ') + "\n\n\n";
+		  		
+		  		console.log(output);
+		  		fs.appendFile("log.txt", divider, function (error) {
+		  		  if (error) throw error;
+		  		  // console.log('Saved! check log.txt :)');
+		  		});	
+		  		fs.appendFile("log.txt", output, function (error) {
+		  		  if (error) throw error;
+		  		  
+		  		});	
+		  			  		
 		  	}
-		  		console.log(error);
+		  	console.log('Saved! check log.txt :)');	
 		  }
+		  console.log(error);
 		});	
 	}
 
@@ -110,14 +131,38 @@
 			    return;  
 			}
 			else{
-					console.log(space + "================= LIRI FOUND THIS FOR YOU...==================")
-					console.log(space + "Song Name: " + "'" +songName.toUpperCase()+ "'");
-					console.log(space + "Album Name: " + data.tracks.items[0].album.name);
-					console.log(space + "Artist Name: " + data.tracks.items[0].album.artists[0].name);	
-					console.log(space + "URL: " + data.tracks.items[0].album.external_urls.spotify + "\n\n\n");	
+					output = space + "================= LIRI FOUND THIS FOR YOU...==================" + 
+					space + "Song Name: " + "'" +songName.toUpperCase()+ "'" +
+					space + "Album Name: " + data.tracks.items[0].album.name +
+					space + "Artist Name: " + data.tracks.items[0].album.artists[0].name +	
+					space + "URL: " + data.tracks.items[0].album.external_urls.spotify + "\n\n\n";
+
+					console.log(output);
+					fs.appendFile("log.txt", output, function (err) {
+					  if (err) throw err;
+					  console.log('Saved!');
+					});		
 				};
 		});
 		  
 	}
+	// =================================================================
+	// doWhatItSays function, fs Node Package
+	function doWhatItSays() {
+		var liriCommand = process.argv[3];
+		  fs.readFile('random.txt', "utf8" ,function(error, data) {
+		    if (error){
+		    	console.log("There is an error: " + error)
+		    }
+		    else {
+		    	console.log("node liri.js " + data);
+		    }
+		  });
+
+			  
+	}
+
+
+
 
 	
