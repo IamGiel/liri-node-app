@@ -24,13 +24,12 @@
 	};
 
 	//=================================================================
-	// Movie function, uses the Request module to call the OMDB api
+	// Movie function, OMDB api
 	function movieThis(){
 		var movie = process.argv[3];
 		if(!movie){
 			movie = "mr nobody";
 		}
-		// var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
 		movieName = movie
 		request("http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy", function (error, response, body) {
 			if (!error && response.statusCode == 200) {
@@ -59,7 +58,7 @@
 	};
 
 	//=================================================================
-	// Tweet function, uses the Twitter module to call the Twitter api
+	// Tweet function, Twitter api
 	function myTweets() { 
 		var client = new twitter({
 		  consumer_key: 'u5L64CZk3QLvKMfFJfkHoKVsY',
@@ -91,78 +90,34 @@
 	}
 
 	// =================================================================
-	// Spotify function, uses the Spotify module to call the Spotify api
+	// Spotify function, Spotify api
 	function spotifyThisSong() {
-			var spotify = new Spotify({
-				id: '27a8864ac89a46a0b05ff38922f61f58',
-				secret: '6396ce8169954f6c9edf68c72af394ab'
-			});
-			var songName = process.argv[3];
-			var params = songName;
-			spotify.search({ type: 'track', query: params }, function(err, data) {
-				if (!err) {
-					var songInfo = data.tracks.items;
-						console.log(songInfo);
-						for (var i = 0; i < 5; i++) {
-							if (songInfo[i] != undefined) {
-								var spotifyResults =
-								"Artist: " + songInfo[i].artists[0].name + "\n" +
-								"Song: " + songInfo[i].name + "\n" +
-								"Album the song is from: " + songInfo[i].album.name + "\n" +
-								"Preview Url: " + songInfo[i].preview_url + "\n" + 
-								"------------------------------ " + i + " ------------------------------" + "\r\n";
-								console.log(spotifyResults);
-								// log(spotifyResults); // calling log function
-							}
-						}
-					}
-				return console.log('Error occurred: ' + err);
-			});
+		var spotify = new Spotify({
+			id: '27a8864ac89a46a0b05ff38922f61f58',
+			secret: '6396ce8169954f6c9edf68c72af394ab'
+		});
+		var songName = process.argv[3];
+		var space = "\n" + "\n" +"\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0";
+		if(!songName){
+			 		songName = "What's my age again";
+				}
+		var params = songName;
+		
+		
+		spotify.search({ type: 'track', query: params }, function(err, data) {
+			if ( err ) {
+			    console.log('Error occurred: ' + err);
+			    return;  
+			}
+			else{
+					console.log(space + "================= LIRI FOUND THIS FOR YOU...==================")
+					console.log(space + "Song Name: " + "'" +songName.toUpperCase()+ "'");
+					console.log(space + "Album Name: " + data.tracks.items[0].album.name);
+					console.log(space + "Artist Name: " + data.tracks.items[0].album.artists[0].name);	
+					console.log(space + "URL: " + data.tracks.items[0].album.external_urls.spotify + "\n\n\n");	
+				};
+		});
+		  
 	}
 
-	// function spotifyThisSong(songName) {
-	// 	var songName = process.argv[3];
-	// 	if(!songName){
-	// 		songName = "What's my age again";
-	// 	}
-	// 	params = songName;
-	// 	spotify.search({ type: "track", query: params }, function(err, data) {
-	// 		if(!err){
-	// 			var songInfo = data.tracks.items;
-	// 			for (var i = 0; i < 5; i++) {
-	// 				if (songInfo[i] != undefined) {
-	// 					var spotifyResults =
-	// 					"Artist: " + songInfo[i].artists[0].name + "\r\n" +
-	// 					"Song: " + songInfo[i].name + "\r\n" +
-	// 					"Album the song is from: " + songInfo[i].album.name + "\r\n" +
-	// 					"Preview Url: " + songInfo[i].preview_url + "\r\n" + 
-	// 					"------------------------------ " + i + " ------------------------------" + "\r\n";
-	// 					console.log(spotifyResults);
-	// 					log(spotifyResults); // calling log function
-	// 				}
-	// 			}
-	// 		}	else {
-	// 			console.log("Error :"+ err);
-	// 			return;
-	// 		}
-	// 	});
-	// };
-	// // Do What It Says function, uses the reads and writes module to access the random.txt file and do what's written in it
-	// function doWhatItSays() {
-	// 	fs.readFile("random.txt", "utf8", function(error, data){
-	// 		if (!error) {
-	// 			doWhatItSaysResults = data.split(",");
-	// 			spotifyThisSong(doWhatItSaysResults[0], doWhatItSaysResults[1]);
-	// 		} else {
-	// 			console.log("Error occurred" + error);
-	// 		}
-	// 	});
-	// };
-	// // Do What It Says function, uses the reads and writes module to access the log.txt file and write everything that returns in terminal in the log.txt file
-	// function log(logResults) {
-	//   fs.appendFile("log.txt", logResults, (error) => {
-	//     if(error) {
-	//       throw error;
-	//     }
-	//   });
-	// }
+	
