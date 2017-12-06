@@ -29,4 +29,15 @@ OMDB API
 
 ## A log.txt is provided to display all data pulled by LIRI
 
+![logs](https://github.com/IamGiel/liri-node-app/blob/master/images/logs.png?raw=true)
+
+<br>
+
+Heres the packages I used: 
+```var fs = require("fs"); //reads and writes files
+	var request = require("request");
+	var keys = require("./keys.js");
+	var twitter = require("twitter");
+	var Spotify = require('node-spotify-api');```
+
 
