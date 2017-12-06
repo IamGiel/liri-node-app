@@ -24,8 +24,9 @@ Twitter API
 <hr>
 OMDB API
 <hr>
-![](https://github.com/IamGiel/liri-node-app/blob/master/images/spotify-this-song.png?raw=true)
 
+![OMDB](https://github.com/IamGiel/liri-node-app/blob/master/images/spotify-this-song.png?raw=true)
 
+## A log.txt is provided to display all data pulled by LIRI
 
 
