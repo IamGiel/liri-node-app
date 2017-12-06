@@ -150,7 +150,7 @@
 	// doWhatItSays function, fs Node Package
 	function doWhatItSays() {
 		var liriCommand = process.argv[3];
-		  fs.readFile('random.txt', "utf8" ,function(error, data) {
+		  fs.writeFile(liriCommand, 'utf' ,function(error, data) {
 		    if (error){
 		    	console.log("There is an error: " + error)
 		    }
