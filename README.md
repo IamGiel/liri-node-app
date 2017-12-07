@@ -1,5 +1,5 @@
   
-##   **Creating LIRI:**
+        ##   **HELLO, IM  LIRI:**
   
   LIRI is a Language Interpretation and Recognition Interface.
   
@@ -55,10 +55,11 @@ OMDB API
 <br>
 
 Heres the packages I used: 
-```var fs = require("fs"); //reads and writes files
-	var request = require("request");
-	var keys = require("./keys.js");
-	var twitter = require("twitter");
-	var Spotify = require('node-spotify-api');```
+       
+        var fs = require("fs"); //reads and writes files
+	    var request = require("request");
+	    var keys = require("./keys.js");
+	    var twitter = require("twitter");
+	    var Spotify = require('node-spotify-api');
 
 
