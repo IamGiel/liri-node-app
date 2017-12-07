@@ -7,12 +7,33 @@
 * LIRI is ran via terminal.
 * A log.txt is provided to see data results
 
-Liri Commands  | Retrieved DAta
-------------- | -------------
-* my-tweets  | retrieves last 20 tweets of the user(twitter API)
-* spotify-this-song  | provides details about a song (spotify API)
-* movie-this  | details about a movie (OMDB API)
-* do-what-it-says  | randomize LIRI command
+<table>
+  <tr>
+    <th>Liri Commands</th>
+    <th>Retrieved Data</th>
+    <th>API</th>
+  </tr>
+  <tr>
+    <td>my-tweets</td>
+    <td>retrieves last 20 tweets of the user</td>
+    <td>TWITTER</td>
+  </tr>
+  <tr>
+    <td>spotify-this-song</td>
+    <td>Song details</td>
+    <td>SPOTIFY</td>
+  </tr>
+  <tr>
+    <td>movie-this</td>
+    <td>Movie info</td>
+    <td>OMDB</td>
+  </tr>
+  <tr>
+    <td>do-what-it-says</td>
+    <td>Random inputs</td>
+    <td>local</td>
+  </tr>
+  </table>
 
 ## Heres a Snapshot
 <hr>
