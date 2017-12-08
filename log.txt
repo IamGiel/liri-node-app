@@ -1,146 +1,30 @@
+ ===================== LIRI PROVIDED THIS DATA FOR YOU...====================
 
 
-              ================= LIRI FOUND THIS FOR YOU...==================
+                            Title: Gladiator
 
-              Song Name: 'WHAT'S MY AGE AGAIN'
+                            Year: 2000
 
-              Album Name: Enema Of The State
+                            Imdb Rating: 8.5
 
-              Artist Name: blink-182
+                            Country: USA, UK
 
-              URL: https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38
+                            Language: English
 
+                            Rotten Tomatoes Rating: undefined
 
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 1 ~~~~~~~~~~~~~~~~~~~~~
-Answer:How to really clear the terminal? https://t.co/PetzBYolhL
-Wed- Dec- 06- 16:47:44
+                            Rotten Tomatoes URL: undefined
 
 
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 2 ~~~~~~~~~~~~~~~~~~~~~
-subtle yet thoughtful https://t.co/i7SDsGHniQ
-Tue- Dec- 05- 10:37:26
 
 
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 3 ~~~~~~~~~~~~~~~~~~~~~
-what a fight! https://t.co/3K9uLVTnka
-Tue- Dec- 05- 02:21:22
+                            ***[MORE INFO BELOW]*** 
 
 
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
 
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 4 ~~~~~~~~~~~~~~~~~~~~~
-lol https://t.co/rRvErjLJlO
-Tue- Dec- 05- 02:18:13
+Actors: ===> Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed
 
+Plot:  ===> When a Roman General is betrayed, and his family murdered by an emperor's corrupt son, he comes to Rome as a gladiator to seek revenge.
 
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 5 ~~~~~~~~~~~~~~~~~~~~~
-awesome photo! https://t.co/AqiHFbeX73
-Tue- Dec- 05- 01:44:50
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 6 ~~~~~~~~~~~~~~~~~~~~~
-I'm taking the 30 day JavaScript Challenge with @WesBos. Join me → https://t.co/bReHwDG9vX #JavaScript30
-Tue- Dec- 05- 01:20:53
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 7 ~~~~~~~~~~~~~~~~~~~~~
-I've learned that making a "living" is not the same thing as making a "life". 
-Maya Angelou
-Life Quotes   |
-Mon- Dec- 04- 19:38:30
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 8 ~~~~~~~~~~~~~~~~~~~~~
-We may encounter many defeats but we must not be defeated. 
-Maya Angelou
-Failure Quotes   |
-Mon- Dec- 04- 19:38:08
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 9 ~~~~~~~~~~~~~~~~~~~~~
-Success is loving life and daring to live it. 
-Maya Angelou 
-Success   |
-Mon- Dec- 04- 19:37:51
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 10 ~~~~~~~~~~~~~~~~~~~~~
-You may not control all the events that happen to you, but you can decide not to be reduced by them. 
-Maya Angelou,… https://t.co/5uv9WD43hi
-Mon- Dec- 04- 19:37:36
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 11 ~~~~~~~~~~~~~~~~~~~~~
-Hate, it has caused a lot of problems in this world, but has not solved one yet. 
-Maya Angelou 
-Problem   |
-Mon- Dec- 04- 19:37:21
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 12 ~~~~~~~~~~~~~~~~~~~~~
-We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve that beauty. 
-Maya Angelou
-Mon- Dec- 04- 19:35:59
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 13 ~~~~~~~~~~~~~~~~~~~~~
-testing for liri
-Mon- Dec- 04- 19:33:26
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 14 ~~~~~~~~~~~~~~~~~~~~~
-Make it so liri.js can take in one of the following commands:
-my-tweets
-spotify-this-song
-movie-this
-do-what-it-says
-Mon- Dec- 04- 02:53:15
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 15 ~~~~~~~~~~~~~~~~~~~~~
-At the top of the liri.js file, write the code you need to grab the data from keys.js. Then store the keys in a variable.
-Mon- Dec- 04- 02:52:46
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 16 ~~~~~~~~~~~~~~~~~~~~~
-testing this
-Mon- Dec- 04- 02:52:03
-
-
- ===================== LIRI GOT YOU LFALEG'S LATEST TWEETS...====================
-
-~~~~~~~~~~~~~~~~~~~~~ Tweet # 17 ~~~~~~~~~~~~~~~~~~~~~
-@Dictionarycom cool stuff!
-Sun- Dec- 03- 20:01:12
-
+====== LIRI ====== LIRI ====== LIRI ====== LIRI====== LIRI ====== LIRI ======
 

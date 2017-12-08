@@ -5,7 +5,8 @@
 	var twitter = require("twitter");
 	var Spotify = require('node-spotify-api');
 	var liriArgument = process.argv[2];
-	var justDoIt = "";
+	var userINPUT = process.argv[3];
+	
 	
 		//=================================================================
 	// Possible commands for this liri app
@@ -23,14 +24,11 @@
 				"\n OPTION: 4. do-what-it-says."+ "\n\n" +
 				"\n**********\nBe sure to put the movie or song name in quotation \nmarks if it's more than one word.\n**********\n\n\n");
 	}
-	var askLiri = function (a, b) {
-		console.log(a,b);
-		return(a, b);
-	}
+	
 	//=================================================================
 	// Movie function, OMDB api
 	function movieThis(){
-		var movie = process.argv[3];
+		var movie = userINPUT;
 		if(!movie){
 			movie = "mr nobody";
 		}
@@ -47,7 +45,8 @@
 				space + "Country: " + movieObject.Country + 
 				space + "Language: " + movieObject.Language +
 				space + "Rotten Tomatoes Rating: " + movieObject.tomatoRating + 
-				space + "Rotten Tomatoes URL: " + movieObject.tomatoURL + "\n" + 
+				space + "Rotten Tomatoes URL: " + movieObject.tomatoURL + "\n\n\n" + 
+				space + "***[MORE INFO BELOW]*** \n\n\n" + 
 				"\nActors: ===> " + movieObject.Actors + "\n" +
 				"\nPlot:  ===> " + movieObject.Plot + "\n" +
 				"\n====== LIRI ====== LIRI ====== LIRI ====== LIRI====== LIRI ====== LIRI ======" + "\n" + "\n";
@@ -75,7 +74,7 @@
 		  access_token_secret: '4jy5h7WipMyxdBYlAkqoIdRRFp6hjw5c34Zhn2uGrm6Du'
 		});
 		 
-		var twitterUsername = process.argv[3];
+		var twitterUsername = userINPUT;
 		var text = "text";
 		var params = {screen_name: twitterUsername, count: 20};
 		if(!twitterUsername){
@@ -84,7 +83,7 @@
 		client.get('statuses/user_timeline', params, function(error, tweets, response) {
 		  if (!error) {
 		  	
-		  	var divider = " ===================== LIRI GOT YOU " + twitterUsername.toUpperCase() +  "'S LATEST TWEETS...====================\n\n";
+		  	var divider = " ================= LIRI GOT YOU " + twitterUsername.toUpperCase() +  "'S LAST 20 TWEETS...================\n\n";
 		  	console.log(divider);
 		  	for (var i = 1; i < tweets.length; i++) {
 		  		var time = tweets[i].created_at;
@@ -94,15 +93,10 @@
 		  		timeArr.slice(0,4).join('- ') + "\n\n\n";
 		  		
 		  		console.log(output);
-		  		fs.appendFile("log.txt", divider, function (error) {
+		  		fs.appendFile("log.txt", divider + "\n" + output, function (error) {
 		  		  if (error) throw error;
 		  		  // console.log('Saved! check log.txt :)');
-		  		});	
-		  		fs.appendFile("log.txt", output, function (error) {
-		  		  if (error) throw error;
-		  		  
-		  		});	
-		  			  		
+		  		});		  		
 		  	}
 		  	console.log('Saved! check log.txt :)');	
 		  }
@@ -117,12 +111,12 @@
 			id: '27a8864ac89a46a0b05ff38922f61f58',
 			secret: '6396ce8169954f6c9edf68c72af394ab'
 		});
-		var songName = process.argv[3];
+		var songName = userINPUT;
 		var space = "\n" + "\n" +"\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0";
 		if(!songName){
 			 		songName = "What's my age again";
 				}
-		var params = songName;
+		params = songName;
 		
 		
 		spotify.search({ type: 'track', query: params }, function(err, data) {
@@ -160,14 +154,29 @@
 			var command;
 			var parameter;
 			
-            command = loggedTxt[0];
-            parameter = loggedTxt[1];
-			            
-			switch(command) {
-				case "my-tweets": myTweets(); break;
-				case "spotify-this-song": spotifyThisSong(); break;
-				case "movie-this": movieThis(); break;
-			}
+	        command = loggedTxt[0];
+	        parameter = loggedTxt[1];
+
+		   parameter = parameter.replace('"', '');
+	       parameter = parameter.replace('"', '');
+	       // console.log(parameter);
+
+	       switch (command) {
+	           case 'my-tweets':
+	               userINPUT = parameter;
+	               myTweets();
+	               break;
+
+	           case 'spotify-this-song':
+	               userINPUT = parameter;
+	               spotifyThisSong();
+	               break;
+
+	           case 'movie-this':
+	               userINPUT = parameter;
+	               movieThis();
+	               break;
+	       }
 		});
 
 	}
