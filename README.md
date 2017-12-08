@@ -54,7 +54,7 @@ OMDB API
 
 <br>
 
-Heres the packages I used: 
+Here are the packages I used: 
        
         var fs = require("fs"); //reads and writes files
 	    var request = require("request");

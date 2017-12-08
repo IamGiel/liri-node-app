@@ -5,24 +5,28 @@
 	var twitter = require("twitter");
 	var Spotify = require('node-spotify-api');
 	var liriArgument = process.argv[2];
+	var justDoIt = "";
 	
-
-	//=================================================================
+		//=================================================================
 	// Possible commands for this liri app
-	switch(liriArgument) {
-		case "my-tweets": myTweets(); break;
-		case "spotify-this-song": spotifyThisSong(); break;
-		case "movie-this": movieThis(); break;
-		case "do-what-it-says": doWhatItSays(); break;
-		// Instructions displayed in terminal to the user
-		default: console.log("=========== MY NAME IS LIRI, CHOOSE ONE OF OPTION COMMANDS BELOW: ==============\n" + 
-			"\n OPTION: 1. my-tweets 'any twitter name' " +
-			"\n OPTION: 2. spotify-this-song 'any song name' "+
-			"\n OPTION: 3. movie-this 'any movie name' "+
-			"\n OPTION: 4. do-what-it-says."+ "\n\n" +
-			"\n**********\nBe sure to put the movie or song name in quotation \nmarks if it's more than one word.\n**********\n\n\n");
-	};
-
+	
+		switch(liriArgument) {
+			case "my-tweets": myTweets(); break;
+			case "spotify-this-song": spotifyThisSong(); break;
+			case "movie-this": movieThis(); break;
+			case "do-what-it-says": doWhatItSays(); break;
+			// Instructions displayed in terminal to the user
+			default: console.log("=========== MY NAME IS LIRI, CHOOSE ONE OF OPTION COMMANDS BELOW: ==============\n" + 
+				"\n OPTION: 1. my-tweets 'any twitter name' " +
+				"\n OPTION: 2. spotify-this-song 'any song name' "+
+				"\n OPTION: 3. movie-this 'any movie name' "+
+				"\n OPTION: 4. do-what-it-says."+ "\n\n" +
+				"\n**********\nBe sure to put the movie or song name in quotation \nmarks if it's more than one word.\n**********\n\n\n");
+	}
+	var askLiri = function (a, b) {
+		console.log(a,b);
+		return(a, b);
+	}
 	//=================================================================
 	// Movie function, OMDB api
 	function movieThis(){
@@ -79,10 +83,6 @@
 		}
 		client.get('statuses/user_timeline', params, function(error, tweets, response) {
 		  if (!error) {
-		  	// var dateToday = new Date();
-		  	// var dateT = dateToday.toString();
-		  	// var date = dateT.split(' ');
-		  	// console.log(date.slice(0,4).toString());
 		  	
 		  	var divider = " ===================== LIRI GOT YOU " + twitterUsername.toUpperCase() +  "'S LATEST TWEETS...====================\n\n";
 		  	console.log(divider);
@@ -148,19 +148,30 @@
 	}
 	// =================================================================
 	// doWhatItSays function, fs Node Package
+	var array_this = [];
 	function doWhatItSays() {
-		var liriCommand = process.argv[3];
-		  fs.writeFile(liriCommand, 'utf' ,function(error, data) {
-		    if (error){
-		    	console.log("There is an error: " + error)
-		    }
-		    else {
-		    	console.log("node liri.js " + data);
-		    }
-		  });
+		
+		fs.readFile("random.txt", 'utf8' ,function(error, data) {
+			if (error) throw error;
+			// a = data.split(',');
+			loggedTxt = data.split(',');
+			console.log(loggedTxt);
 
-			  
+			var command;
+			var parameter;
+			
+            command = loggedTxt[0];
+            parameter = loggedTxt[1];
+			            
+			switch(command) {
+				case "my-tweets": myTweets(); break;
+				case "spotify-this-song": spotifyThisSong(); break;
+				case "movie-this": movieThis(); break;
+			}
+		});
+
 	}
+
 
 
 
