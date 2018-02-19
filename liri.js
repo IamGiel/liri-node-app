@@ -176,6 +176,11 @@
 	}
 
 
+	//NTH
+	//note: to untrack file from git:
+	// git rm -r --cached "path/to/foo/"
+
+
 
 
 
