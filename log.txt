@@ -28,4 +28,155 @@ Plot:  ===> When a Roman General is betrayed, and his family murdered by an empe
 
 ====== LIRI ====== LIRI ====== LIRI ====== LIRI====== LIRI ====== LIRI ======
 
- 
+  ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 1 ~~~~~~~~~~~~~~~~~~~~~
+Answer:Node: import object array from another js file? https://t.co/nkLteJsxn7
+Mon- Jan- 08- 23:45:47
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 2 ~~~~~~~~~~~~~~~~~~~~~
+Answer:Is there a difference between /\s/g and /\s+/g? https://t.co/slhgvgvdK8
+Mon- Jan- 08- 14:41:31
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 3 ~~~~~~~~~~~~~~~~~~~~~
+https://t.co/kKwzUKQ5vR
+Fri- Dec- 22- 04:28:10
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 4 ~~~~~~~~~~~~~~~~~~~~~
+RT @fearnohill: Rework is a must read if you are interested in building something really good @jasonfried and @dhh nail so many things! htt…
+Thu- Dec- 21- 05:35:01
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 5 ~~~~~~~~~~~~~~~~~~~~~
+“Clean Code” by Tzach Ovadia https://t.co/B0PNKVcK0z
+Wed- Dec- 20- 20:25:01
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 6 ~~~~~~~~~~~~~~~~~~~~~
+RT @mashable: The wheel has been reinvented and it's cooler than you think https://t.co/JXDKAn0hYn
+Mon- Dec- 18- 14:04:07
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 7 ~~~~~~~~~~~~~~~~~~~~~
+RT @mashable: We really hope this is a thing sooner rather than later https://t.co/ihqrqdD9DF
+Mon- Dec- 18- 13:47:38
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 8 ~~~~~~~~~~~~~~~~~~~~~
+“JavaScript — Map vs. ForEach” by @BrandonMorelli https://t.co/ywWyncTHh7
+Mon- Dec- 18- 13:45:32
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 9 ~~~~~~~~~~~~~~~~~~~~~
+Generation Screwed https://t.co/phRyciu6qj via @Highline
+Mon- Dec- 18- 03:09:30
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 10 ~~~~~~~~~~~~~~~~~~~~~
+RT @mashable: This electric bike lets you ride on water https://t.co/0U20Hu5gJO
+Sun- Dec- 17- 13:48:43
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 11 ~~~~~~~~~~~~~~~~~~~~~
+RT @mashable: Is this the future of transportation? https://t.co/szznd5svl9
+Sun- Dec- 17- 13:44:23
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 12 ~~~~~~~~~~~~~~~~~~~~~
+RT @mashable: Can't. Stop. Watching https://t.co/qRxbrLaUKs
+Sun- Dec- 17- 13:43:40
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 13 ~~~~~~~~~~~~~~~~~~~~~
+RT @dhh: Love that @inc picked @mailchimp as company of the year! Half a billion in revenue, profitable, based in Atlanta, and never took a…
+Tue- Dec- 12- 15:14:02
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 14 ~~~~~~~~~~~~~~~~~~~~~
+Answer:how to pass a regex from an array - to string, when using .join('') FOR EXAMPLE [“X”,“-”,“M”,“E”,“N”]… https://t.co/dfWZ5g6jQr
+Tue- Dec- 12- 04:05:55
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 15 ~~~~~~~~~~~~~~~~~~~~~
+Answer:how to pass a regex from an array - to string, when using .join('') FOR EXAMPLE [“X”,“-”,“M”,“E”,“N”] https://t.co/8TnUQ92S4d
+Tue- Dec- 12- 03:48:02
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 16 ~~~~~~~~~~~~~~~~~~~~~
+When anime is at its best https://t.co/rKwHe74QaW
+Fri- Dec- 08- 15:01:41
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 17 ~~~~~~~~~~~~~~~~~~~~~
+She Sells C Shells - .... (reading shell script basics)
+Wed- Dec- 06- 23:46:36
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 18 ~~~~~~~~~~~~~~~~~~~~~
+Answer:How to really clear the terminal? https://t.co/PetzBYolhL
+Wed- Dec- 06- 16:47:44
+
+
+ ================= LIRI GOT YOU ANY TWITTER NAME'S LAST 20 TWEETS...================
+
+
+~~~~~~~~~~~~~~~~~~~~~ Tweet # 19 ~~~~~~~~~~~~~~~~~~~~~
+subtle yet thoughtful https://t.co/i7SDsGHniQ
+Tue- Dec- 05- 10:37:26
+
+
