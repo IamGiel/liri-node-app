@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/IamGiel/liri-node-app#readme",
   "dependencies": {
+    "dotenv": "^5.0.0",
     "node-spotify-api": "^1.0.7",
     "request": "^2.83.0",
     "require": "^2.4.20",
