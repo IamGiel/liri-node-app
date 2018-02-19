@@ -6,6 +6,7 @@
 * LIRI will be a command line node app that takes in parameters and gives you back data.
 * LIRI is ran via terminal.
 * A log.txt is provided to see data results
+* NOTE: to use this app, you need your own `twitter API keys` and store it in a file called `keys.js`
 
 <table>
   <tr>
